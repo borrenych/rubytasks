@@ -1,0 +1,10 @@
+<head>
+<title>Famous French Chansons</title>
+</head>
+<body>
+<h1>A list of the most loved chansons ever</h1>
+<% @songs.each do |song| %>
+    <h3> <%= song[:title] %></h3>
+    <p> <a href="<%=song[:url]%>"> Video </a></p>
+<% end %>
+</body>
